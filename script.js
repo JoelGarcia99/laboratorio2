@@ -32,7 +32,8 @@ function processHTTPResponse(response) {
     statusDiv.innerHTML = statusResp;
 
     const statusCodeDiv = document.querySelector("#codigo");
-    statusCodeDiv.innerHTML = "<b style=\"color: blue; font-size: 2em;\">Texto: " + response.statusText+"<br/>Código: "+response.status+"</b>";
+    const statusText = (response.statusText !== "")? response.statusText:"Sin texto";
+    statusCodeDiv.innerHTML = "<b style=\"color: blue; font-size: 2em;\">Texto: " + statusText+"<br/>Código: "+response.status+"</b>";
 
     const headerDiv = document.querySelector("#cabeceras");
     headerDiv.textContent = response.getAllResponseHeaders();

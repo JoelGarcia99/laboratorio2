@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(0, 75, 0);
+    color: white;
+    display: block;
+    height: 50px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.ejercicio {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: rgb(241, 228, 228);
+    border-radius: 20px;
+    transition: .3s ease-in;
+}
+
+.ejercicio:hover{
+    box-shadow: -10px 10px 5px rgb(224, 224, 224);
+    transition: .3s ease-in;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ejercicio h3{
+    text-align: center;
+}
+
+.subcontainer{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.response {
+    color: red;
+}

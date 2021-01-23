@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Ejercicios JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ejercicios JavaScript</h1>
+        </div>
+        <div class="subcontainer">
+            <div class="ejercicio">
+                <h3>Palabra palíndroma</h1>
+                <form>
+                    <label for="palindroma">Ingrese una oración</label>
+                    <input name="palindroma" id="palindroma" type="text" placeholder="Ingrese algo" required />
+                    <label class="response" id="responsePalindroma"></label>
+                    <br />
+                </form>
+                <input type="submit" id="palindromaBTN" value="¿Es Palíndroma?" />
+            </div>
+            <div class="ejercicio">
+                <h3>número mayor</h1>
+                <form>
+                    <label for="number1">Ingrese una número</label>
+                    <input name="number1" id="number1" type="number" placeholder="Ingrese algo" required />
+                    <label for="number2">Ingrese otro número</label>
+                    <input name="number2" id="number2" type="number" placeholder="Ingrese algo" required />
+                    <label class="response" id="responseMayor"></label>
+                    <br />
+                </form>
+                <input type="submit" id="mayorBTN" value="Ver mayor" />
+            </div>
+            <div class="ejercicio">
+                <h3>Vocales que aparecen</h1>
+                <form>
+                    <label for="phrase">Ingrese una frase</label>
+                    <input name="phrase" id="phrase" type="text" placeholder="Ingrese algo" required />
+                    <label class="response" id="responseVocales"></label>
+                    <br />
+                    <input type="submit" id="vocalesBTN" value="¿Es Palíndroma?" />
+                </form>
+            </div>
+            <div class="ejercicio">
+                <h3>Cuenta vocales</h1>
+                <form>
+                    <label for="phrase2">Ingrese una frase</label>
+                    <input name="phrase2"id="phrase2" type="text" placeholder="Ingrese algo" required />
+                    <label class="response" id="responseConteo"></label>
+                    <br />
+                </form>
+                <input type="submit" id="conteoBTN" value="¿Es Palíndroma?" />
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./1. palindromo.js"></script>
+    <script src="./2. mayor.js"></script>
+    <script src="./3. cuentaVocales.js"></script>
+    <script src="./4. vocalesQueAparecen.js"></script>
+</body>
+</html>
